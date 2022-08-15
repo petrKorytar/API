@@ -24,15 +24,13 @@
 
     $response = [];
     $db = new Db();
-
-    echo("Index funguje");
-
+    
     //$db->createDatabase($serverName,$userName,$password,$dbName);
     //$db->createTable($serverName,$userName,$password,$dbName,$tableName);
 
     //Based on inputs from App.vue, it calls methods in the Bb class.
     $received_data = json_decode(file_get_contents("php://input"));
-         /*
+         
     switch($received_data->action){
        case 'fetchall': // Returns all users.
           echo json_encode($db->fetchAllUsers($tableName));
@@ -67,5 +65,5 @@
           $db->deleteUser($id,$tableName);
           break;
     }
-    */
+    
 ?>
